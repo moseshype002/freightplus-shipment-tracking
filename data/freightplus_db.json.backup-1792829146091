@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "adminConfig": {
+    "isInitialized": true,
+    "initializedAt": "2026-10-23T19:33:57.786Z",
+    "adminEmail": "admin@freightplus.com"
+  },
+  "users": [
+    {
+      "id": "user-client-01",
+      "name": "Elena Rostova",
+      "email": "client@acmecorp.com",
+      "role": "client",
+      "company": "Acme High-Tech Components Inc.",
+      "phone": "+1 (555) 234-5678",
+      "passwordHash": "$2b$12$X6YpU.1MH9G7FzxdETiPoe6Ir3aj1pFFfxrgrkXJ8aPk226CQWzNW",
+      "createdAt": "2026-10-23T19:33:17.970Z"
+    },
+    {
+      "id": "user-1792784014818-542dbf",
+      "name": "Hacker Bob",
+      "email": "bob@hacker.io",
+      "role": "client",
+      "passwordHash": "$2b$12$TfBWskw0D.Uyzv6CdqgwOOtAltYobVaf06VdIymQgPksHdDJ.by5e",
+      "createdAt": "2026-10-23T19:33:35.208Z"
+    },
+    {
+      "id": "admin-1792784037397",
+      "name": "System Admin",
+      "email": "admin@freightplus.com",
+      "role": "admin",
+      "company": "Freight Plus Command",
+      "passwordHash": "$2b$12$AohMuJx9mb8IqWYrFsg7b.aYAv1UkGmnnBnxixmb3OCXF/bW2e/Ea",
+      "createdAt": "2026-10-23T19:33:57.786Z"
+    }
+  ],
+  "shipments": [
+    {
+      "id": "shp-001",
+      "trackingNumber": "FP-8942-US",
+      "consignmentNumber": "CN-2026-8942",
+      "trackingToken": "tok_8942_frankfurt_jfk_a7b9",
+      "title": "High-Precision Surgical Robotics & Sensors",
+      "bookingStatus": "Approved",
+      "paymentStatus": "Paid",
+      "movementStatus": "In Transit",
+      "status": "In Transit",
+      "serviceType": "Air Express",
+      "userId": "user-client-01",
+      "sender": {
+        "name": "Dr. Klaus Becker",
+        "company": "Heidelberg BioMedical Instruments GmbH",
+        "email": "logistics@heidelberg-med.de",
+        "phone": "+49 6221 5400",
+        "street": "Tiergartenstrasse 17",
+        "city": "Heidelberg",
+        "postalCode": "69121",
+        "country": "Germany",
+        "airportOrPortCode": "FRA",
+        "lat": 49.4093,
+        "lng": 8.6942
+      },
+      "recipient": {
+        "name": "Elena Rostova",
+        "company": "Acme High-Tech Components Inc.",
+        "email": "client@acmecorp.com",
+        "phone": "+1 (555) 234-5678",
+        "street": "750 Lexington Avenue, Fl 14",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10022",
+        "country": "United States",
+        "airportOrPortCode": "JFK",
+        "lat": 40.7629,
+        "lng": -73.9701
+      },
+      "originHub": {
+        "name": "Frankfurt CargoCity South Hub",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "code": "FRA",
+        "lat": 50.0379,
+        "lng": 8.5622
+      },
+      "destinationHub": {
+        "name": "John F. Kennedy International Cargo Terminal",
+        "city": "New York",
+        "country": "United States",
+        "code": "JFK",
+        "lat": 40.6413,
+        "lng": -73.7781
+      },
+      "currentLocation": {
+        "name": "Transatlantic Flight Corridor (Flight LH-8201)",
+        "city": "Mid-Atlantic En Route",
+        "country": "International Airspace",
+        "lat": 48.21,
+        "lng": -35.4
+      },
+      "cargoDetails": {
+        "pieces": 4,
+        "weightKg": 142.5,
+        "volumeCbm": 1.25,
+        "declaredValueUsd": 185000,
+        "cargoType": "Precision Medical Equipment",
+        "dimensions": {
+          "lengthCm": 120,
+          "widthCm": 80,
+          "heightCm": 110
+        },
+        "dangerousGoods": false,
+        "temperatureControlled": true,
+        "temperatureRange": "15°C - 25°C"
+      },
+      "carrier": {
+        "name": "Lufthansa Cargo AG",
+        "serviceLevel": "Air Priority Secure",
+        "vesselOrFlight": "LH-8201 (Boeing 777F)",
+        "sealNumber": "SEAL-FRA-8942-A",
+        "contactNumber": "+49 69 6960"
+      },
+      "pricing": {
+        "baseAmount": 1211.25,
+        "handlingFee": 150,
+        "totalAmount": 1361.25,
+        "currency": "USD",
+        "payer": "sender"
+      },
+      "holdDetails": {
+        "isOnHold": false
+      },
+      "estimatedDelivery": "2026-10-24T23:33:17.567Z",
+      "dispatchDate": "2026-10-23T13:33:17.567Z",
+      "actualDelivery": null,
+      "createdAt": "2026-10-22T07:33:17.567Z",
+      "updatedAt": "2026-10-23T13:33:17.567Z",
+      "signatureRequired": true,
+      "notes": "Fragile optoelectronic sensors. Keep upright. Shock sensors armed.",
+      "milestones": [
+        {
+          "id": "ms-001-1",
+          "status": "Awaiting Dispatch",
+          "title": "Booking Approved & Consignment Documented",
+          "location": "Heidelberg Operations Center",
+          "city": "Heidelberg",
+          "country": "Germany",
+          "timestamp": "2026-10-22T07:33:17.567Z",
+          "notes": "Airway Bill AWB-020-8942-01 generated. Consignment manifest approved.",
+          "operator": "H. Weber (FRA-OPS)",
+          "completed": true,
+          "lat": 49.4093,
+          "lng": 8.6942
+        },
+        {
+          "id": "ms-001-2",
+          "status": "In Transit",
+          "title": "Departed Frankfurt On Flight LH-8201",
+          "location": "Frankfurt Cargo Terminal Ramp 4",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-23T13:33:17.567Z",
+          "notes": "Loaded into Lower Deck Pallet Position 22R. Cruising at 36,000 ft.",
+          "operator": "Captain J. Wagner",
+          "completed": true,
+          "lat": 48.21,
+          "lng": -35.4
+        }
+      ]
+    },
+    {
+      "id": "shp-002",
+      "trackingNumber": "FP-7104-DE",
+      "consignmentNumber": "CN-2026-7104",
+      "trackingToken": "tok_7104_tokyo_frankfurt_b2c4",
+      "title": "Automated Industrial Controller Wafers & Sensors",
+      "bookingStatus": "Approved",
+      "paymentStatus": "Paid",
+      "movementStatus": "On Hold",
+      "status": "On Hold",
+      "serviceType": "Standard Freight",
+      "userId": "user-client-01",
+      "sender": {
+        "name": "Kenji Takahashi",
+        "company": "Sora Precision Automation K.K.",
+        "email": "export@sora-precision.co.jp",
+        "phone": "+81 3 5555 0142",
+        "street": "Minato-ku Shibaura 3-1-21",
+        "city": "Tokyo",
+        "postalCode": "108-0023",
+        "country": "Japan",
+        "airportOrPortCode": "HND",
+        "lat": 35.6441,
+        "lng": 139.7475
+      },
+      "recipient": {
+        "name": "Elena Rostova",
+        "company": "Acme Components Germany",
+        "email": "elena@acme.de",
+        "phone": "+49 69 9998 01",
+        "street": "Speicherstrasse 55",
+        "city": "Frankfurt am Main",
+        "postalCode": "60327",
+        "country": "Germany",
+        "airportOrPortCode": "FRA",
+        "lat": 50.1012,
+        "lng": 8.6653
+      },
+      "originHub": {
+        "name": "Tokyo Haneda Air Cargo Terminal",
+        "city": "Tokyo",
+        "country": "Japan",
+        "code": "HND",
+        "lat": 35.5494,
+        "lng": 139.7798
+      },
+      "destinationHub": {
+        "name": "Frankfurt Logistics Air Hub",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "code": "FRA",
+        "lat": 50.0379,
+        "lng": 8.5622
+      },
+      "currentLocation": {
+        "name": "Frankfurt Main Customs Inspection Bay C",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "lat": 50.0385,
+        "lng": 8.5635
+      },
+      "cargoDetails": {
+        "pieces": 8,
+        "weightKg": 380,
+        "volumeCbm": 3.4,
+        "declaredValueUsd": 94000,
+        "cargoType": "Industrial Automation Electronics",
+        "dimensions": {
+          "lengthCm": 100,
+          "widthCm": 100,
+          "heightCm": 120
+        },
+        "dangerousGoods": false,
+        "temperatureControlled": false
+      },
+      "carrier": {
+        "name": "Nippon Cargo Airlines",
+        "serviceLevel": "Express Freight Global",
+        "vesselOrFlight": "KZ-024 (Boeing 747-8F)",
+        "sealNumber": "JP-TYO-99120",
+        "contactNumber": "+81 3 5742 2200"
+      },
+      "pricing": {
+        "baseAmount": 1216,
+        "handlingFee": 120,
+        "totalAmount": 1336,
+        "currency": "USD",
+        "payer": "recipient"
+      },
+      "holdDetails": {
+        "isOnHold": true,
+        "reason": "Customs awaiting RoHS compliance certificates and revised EU tariff valuation.",
+        "customerExplanation": "Customs clearance inspection in progress at Frankfurt Hub. Documentation review underway.",
+        "placedOnHoldAt": "2026-10-23T15:33:17.567Z"
+      },
+      "estimatedDelivery": "2026-10-25T19:33:17.567Z",
+      "dispatchDate": "2026-10-21T12:33:17.567Z",
+      "actualDelivery": null,
+      "createdAt": "2026-10-20T19:33:17.567Z",
+      "updatedAt": "2026-10-23T15:33:17.567Z",
+      "signatureRequired": true,
+      "notes": "Customs declaration under tariff code 8538.90.",
+      "milestones": [
+        {
+          "id": "ms-002-1",
+          "status": "Awaiting Dispatch",
+          "title": "Export Documentation Verified",
+          "location": "Tokyo Logistics Dispatch Center",
+          "city": "Tokyo",
+          "country": "Japan",
+          "timestamp": "2026-10-20T21:33:17.567Z",
+          "notes": "EDI manifest dispatched to Haneda customs authority.",
+          "operator": "K. Tanaka",
+          "completed": true,
+          "lat": 35.5494,
+          "lng": 139.7798
+        },
+        {
+          "id": "ms-002-2",
+          "status": "In Transit",
+          "title": "Arrived at Frankfurt Transit Hub",
+          "location": "Frankfurt Airport CargoCity Ramp 3",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-23T05:33:17.567Z",
+          "notes": "Flight KZ-024 touched down. De-consolidated into bonded warehouse.",
+          "operator": "R. Braun",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-002-3",
+          "status": "On Hold",
+          "title": "Customs Hold — Documentation Review Underway",
+          "location": "Hauptzollamt Frankfurt Flughafen",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-23T15:33:17.567Z",
+          "notes": "Awaiting European Union RoHS compliance declaration certificate.",
+          "operator": "Inspector D. Mueller",
+          "completed": false,
+          "lat": 50.0385,
+          "lng": 8.5635
+        }
+      ]
+    },
+    {
+      "id": "shp-003",
+      "trackingNumber": "FP-1209-CA",
+      "consignmentNumber": "CN-2026-1209",
+      "trackingToken": "tok_1209_chicago_montreal_d5e8",
+      "title": "Automotive EV Battery Cell Modules",
+      "bookingStatus": "Awaiting Admin Review",
+      "paymentStatus": "Awaiting Payment",
+      "movementStatus": "Awaiting Dispatch",
+      "status": "Awaiting Dispatch",
+      "serviceType": "Standard Freight",
+      "userId": "user-client-01",
+      "sender": {
+        "name": "Robert Miller",
+        "company": "Great Lakes Lithium Cells LLC",
+        "email": "freight@greatlakes-cells.com",
+        "phone": "+1 (312) 555-0188",
+        "street": "4200 South Pulaski Rd",
+        "city": "Chicago",
+        "state": "IL",
+        "postalCode": "60632",
+        "country": "United States",
+        "airportOrPortCode": "ORD",
+        "lat": 41.8164,
+        "lng": -87.7247
+      },
+      "recipient": {
+        "name": "Marc Tremblay",
+        "company": "St. Lawrence Electric Mobility Ltd.",
+        "email": "m.tremblay@stlawrence-ev.ca",
+        "phone": "+1 (514) 555-0149",
+        "street": "8800 Rue Saint-Urbain",
+        "city": "Montreal",
+        "state": "QC",
+        "postalCode": "H2P 2N7",
+        "country": "Canada",
+        "airportOrPortCode": "YUL",
+        "lat": 45.5401,
+        "lng": -73.6394
+      },
+      "originHub": {
+        "name": "Chicago O'Hare Intermodal Freight Depot",
+        "city": "Chicago",
+        "country": "United States",
+        "code": "ORD",
+        "lat": 41.9742,
+        "lng": -87.9073
+      },
+      "destinationHub": {
+        "name": "Montreal Pierre Elliott Trudeau Cargo Logistics",
+        "city": "Montreal",
+        "country": "Canada",
+        "code": "YUL",
+        "lat": 45.4705,
+        "lng": -73.7408
+      },
+      "currentLocation": {
+        "name": "Great Lakes Packaging Center",
+        "city": "Chicago",
+        "country": "United States",
+        "lat": 41.8164,
+        "lng": -87.7247
+      },
+      "cargoDetails": {
+        "pieces": 12,
+        "weightKg": 1240,
+        "volumeCbm": 6.2,
+        "declaredValueUsd": 68000,
+        "cargoType": "Lithium Ion Battery Modules (UN3480)",
+        "dimensions": {
+          "lengthCm": 120,
+          "widthCm": 100,
+          "heightCm": 140
+        },
+        "dangerousGoods": true,
+        "temperatureControlled": false
+      },
+      "carrier": {
+        "name": "North American Freightways Intermodal",
+        "serviceLevel": "Cross-Border HazMat Ground",
+        "vesselOrFlight": "TRK-NA-449",
+        "sealNumber": "HAZ-USCA-8819",
+        "contactNumber": "+1 (800) 555-8833"
+      },
+      "pricing": {
+        "baseAmount": 3968,
+        "handlingFee": 250,
+        "totalAmount": 4218,
+        "currency": "USD",
+        "payer": "sender"
+      },
+      "holdDetails": {
+        "isOnHold": false
+      },
+      "estimatedDelivery": "2026-10-26T19:33:17.567Z",
+      "dispatchDate": null,
+      "actualDelivery": null,
+      "createdAt": "2026-10-23T16:33:17.567Z",
+      "updatedAt": "2026-10-23T16:33:17.567Z",
+      "signatureRequired": true,
+      "notes": "UN 3480 Class 9 Dangerous Goods. Awaiting administrator review and border pre-clearance.",
+      "milestones": [
+        {
+          "id": "ms-005-1",
+          "status": "Awaiting Dispatch",
+          "title": "Booking Submitted — Awaiting Administrator Review",
+          "location": "Chicago Packaging Center",
+          "city": "Chicago",
+          "country": "United States",
+          "timestamp": "2026-10-23T16:33:17.567Z",
+          "notes": "Class 9 HazMat documentation uploaded. Awaiting dispatch authorization.",
+          "operator": "Automated Booking System",
+          "completed": true,
+          "lat": 41.8164,
+          "lng": -87.7247
+        }
+      ]
+    }
+  ],
+  "auditLogs": []
+}

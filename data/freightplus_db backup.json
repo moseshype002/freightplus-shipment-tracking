@@ -1,0 +1,1567 @@
+{
+  "version": 1,
+  "adminConfig": {
+    "isInitialized": true,
+    "initializedAt": "2026-10-23T19:33:57.786Z",
+    "adminEmail": "admin@freightplus.com"
+  },
+  "users": [
+    {
+      "id": "user-client-01",
+      "name": "Elena Rostova",
+      "email": "client@acmecorp.com",
+      "role": "client",
+      "company": "Acme High-Tech Components Inc.",
+      "phone": "+1 (555) 234-5678",
+      "passwordHash": "$2b$12$X6YpU.1MH9G7FzxdETiPoe6Ir3aj1pFFfxrgrkXJ8aPk226CQWzNW",
+      "createdAt": "2026-10-23T19:33:17.970Z"
+    },
+    {
+      "id": "user-1792784014818-542dbf",
+      "name": "Hacker Bob",
+      "email": "bob@hacker.io",
+      "role": "client",
+      "passwordHash": "$2b$12$TfBWskw0D.Uyzv6CdqgwOOtAltYobVaf06VdIymQgPksHdDJ.by5e",
+      "createdAt": "2026-10-23T19:33:35.208Z"
+    },
+    {
+      "id": "admin-1792784037397",
+      "name": "System Admin",
+      "email": "admin@freightplus.com",
+      "role": "admin",
+      "company": "Freight Plus Command",
+      "passwordHash": "$2b$12$sBK9ViQ9d46IOW3W1kD9X.nWNhPer6SGq32smsbnmVh2cc13rrUNS",
+      "createdAt": "2026-10-23T19:33:57.786Z"
+    }
+  ],
+  "shipments": [
+    {
+      "id": "shp-1793177404752",
+      "trackingNumber": "FP-9366-UN",
+      "consignmentNumber": "CN-2026-9366",
+      "trackingToken": "7d08db95362ee5bb0b82a4515fee0860",
+      "title": "High-Precision Industrial Instruments",
+      "bookingStatus": "Approved",
+      "paymentStatus": "Paid",
+      "movementStatus": "In Transit",
+      "status": "In Transit",
+      "serviceType": "Air Express",
+      "sender": {
+        "name": "Marcus moses",
+        "company": "Heidelberg Precision Labs",
+        "street": "Industriestrasse 42",
+        "city": "Lagos",
+        "postalCode": "60549",
+        "country": "Nigeria",
+        "phone": "+49 69 5050 11",
+        "email": "logistics@heidelberg-labs.de"
+      },
+      "recipient": {
+        "name": "Elena Rose",
+        "company": "Acme Global Aerospace",
+        "street": "750 3rd Avenue, Fl 18",
+        "city": "Huston Texes",
+        "postalCode": "10017",
+        "country": "United States",
+        "phone": "+1 (555) 234-9000",
+        "email": "elena@acme-aerospace.com"
+      },
+      "originHub": {
+        "name": "Lagos Cargo Gateway",
+        "city": "Lagos",
+        "country": "Nigeria",
+        "code": "LAG",
+        "lat": 50,
+        "lng": 8.5
+      },
+      "destinationHub": {
+        "name": "Huston Texes International Terminal",
+        "city": "Huston Texes",
+        "country": "United States",
+        "code": "HUS",
+        "lat": 40.7,
+        "lng": -74
+      },
+      "currentLocation": {
+        "name": "Regional Intermodal Hub",
+        "city": "Huston Texes",
+        "country": "United States",
+        "lat": 40.7,
+        "lng": -74
+      },
+      "cargoDetails": {
+        "cargoType": "vegetables",
+        "weightKg": 90.4,
+        "pieces": 3,
+        "declaredValueUsd": 44972,
+        "dangerousGoods": false,
+        "temperatureControlled": false,
+        "dimensions": {
+          "lengthCm": 80,
+          "widthCm": 60,
+          "heightCm": 50
+        }
+      },
+      "carrier": {
+        "name": "Freight Plus Logistics Network",
+        "serviceLevel": "Air Express",
+        "sealNumber": "SEAL-9366-A"
+      },
+      "pricing": {
+        "baseAmount": 888,
+        "handlingFee": 120,
+        "totalAmount": 888,
+        "currency": "USD",
+        "payer": "sender"
+      },
+      "holdDetails": {
+        "isOnHold": false
+      },
+      "estimatedDelivery": "2026-10-30T08:50:04.752Z",
+      "dispatchDate": "2026-10-28T08:57:01.955Z",
+      "actualDelivery": null,
+      "signatureRequired": true,
+      "notes": "Handle with care. Optoelectronic components.",
+      "createdAt": "2026-10-28T08:50:04.751Z",
+      "updatedAt": "2026-10-28T09:00:20.457Z",
+      "userId": "user-client-01",
+      "milestones": [
+        {
+          "id": "ms-1793177404752-1",
+          "status": "Awaiting Dispatch",
+          "title": "Booking Received — Awaiting Admin Review",
+          "location": "Lagos Booking Portal",
+          "city": "Lagos",
+          "country": "Nigeria",
+          "timestamp": "2026-10-28T08:50:04.751Z",
+          "notes": "Consignment created with Air Express service tier. Awaiting payment and dispatch authorization.",
+          "operator": "System Automation",
+          "completed": true,
+          "lat": 50,
+          "lng": 8.5
+        },
+        {
+          "id": "ms-1793177821961-edcb",
+          "status": "In Transit",
+          "title": "Consignment Dispatched from Origin Hub",
+          "location": "Lagos Cargo Gateway",
+          "city": "Lagos",
+          "country": "Nigeria",
+          "timestamp": "2026-10-28T08:57:01.955Z",
+          "notes": "Cargo tender approved. Transport carrier assigned: Freight Plus Logistics Network.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 40.7,
+          "lng": -74
+        },
+        {
+          "id": "ms-1793178020457-477e",
+          "status": "In Transit",
+          "title": "Arrived at Transit Hub",
+          "location": "Regional Intermodal Hub",
+          "city": "Huston Texes",
+          "country": "United States",
+          "timestamp": "2026-10-28T09:00:20.457Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 40.7,
+          "lng": -74
+        }
+      ],
+      "journeyStartedAt": "2026-10-28T08:57:01.955Z",
+      "journeyDurationSeconds": 172383,
+      "journeyPausedAt": null,
+      "journeyPausedElapsedSeconds": 0,
+      "journeyProgressAtPause": 0
+    },
+    {
+      "id": "shp-1793176600269",
+      "trackingNumber": "FP-4307-UN",
+      "consignmentNumber": "CN-2026-4307",
+      "trackingToken": "9c5b2ba1c1b161755cf97aef29d2a7de",
+      "title": "High-Precision Industrial Instruments",
+      "bookingStatus": "Awaiting Admin Review",
+      "paymentStatus": "Awaiting Payment",
+      "movementStatus": "Awaiting Dispatch",
+      "status": "Awaiting Dispatch",
+      "serviceType": "Air Express",
+      "sender": {
+        "name": "Marcus Vance",
+        "company": "Heidelberg Precision Labs",
+        "street": "Industriestrasse 42",
+        "city": "Frankfurt",
+        "postalCode": "60549",
+        "country": "Germany",
+        "phone": "+49 69 5050 11",
+        "email": "logistics@heidelberg-labs.de"
+      },
+      "recipient": {
+        "name": "Elena Rostova",
+        "company": "Acme Global Aerospace",
+        "street": "750 3rd Avenue, Fl 18",
+        "city": "New York",
+        "postalCode": "10017",
+        "country": "United States",
+        "phone": "+1 (555) 234-9000",
+        "email": "elena@acme-aerospace.com"
+      },
+      "originHub": {
+        "name": "Frankfurt Cargo Gateway",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "code": "FRA",
+        "lat": 50,
+        "lng": 8.5
+      },
+      "destinationHub": {
+        "name": "New York International Terminal",
+        "city": "New York",
+        "country": "United States",
+        "code": "NEW",
+        "lat": 40.7,
+        "lng": -74
+      },
+      "currentLocation": {
+        "name": "Frankfurt Consignment Collection Point",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "lat": 50,
+        "lng": 8.5
+      },
+      "cargoDetails": {
+        "cargoType": "Electronic Sensors & Transducers",
+        "weightKg": 85,
+        "pieces": 3,
+        "declaredValueUsd": 45000,
+        "dangerousGoods": false,
+        "temperatureControlled": true,
+        "temperatureRange": "2°C - 8°C",
+        "dimensions": {
+          "lengthCm": 80,
+          "widthCm": 60,
+          "heightCm": 50
+        }
+      },
+      "carrier": {
+        "name": "Freight Plus Logistics Network",
+        "serviceLevel": "Air Express",
+        "sealNumber": "SEAL-4307-A"
+      },
+      "pricing": {
+        "baseAmount": 843,
+        "handlingFee": 120,
+        "totalAmount": 843,
+        "currency": "USD",
+        "payer": "sender"
+      },
+      "holdDetails": {
+        "isOnHold": false
+      },
+      "estimatedDelivery": "2026-10-30T08:36:40.269Z",
+      "dispatchDate": null,
+      "actualDelivery": null,
+      "signatureRequired": true,
+      "notes": "Handle with care. Optoelectronic components.",
+      "createdAt": "2026-10-28T08:36:40.268Z",
+      "updatedAt": "2026-10-28T08:36:40.268Z",
+      "userId": "user-client-01",
+      "milestones": [
+        {
+          "id": "ms-1793176600269-1",
+          "status": "Awaiting Dispatch",
+          "title": "Booking Received — Awaiting Admin Review",
+          "location": "Frankfurt Booking Portal",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-28T08:36:40.268Z",
+          "notes": "Consignment created with Air Express service tier. Awaiting payment and dispatch authorization.",
+          "operator": "System Automation",
+          "completed": true,
+          "lat": 50,
+          "lng": 8.5
+        }
+      ]
+    },
+    {
+      "id": "shp-1792897286588",
+      "trackingNumber": "FP-3490-UN",
+      "consignmentNumber": "CN-2026-3490",
+      "trackingToken": "f8777558cce9b185f76f15f22ca11529",
+      "title": "High-Precision Industrial Instruments",
+      "bookingStatus": "Awaiting Admin Review",
+      "paymentStatus": "Awaiting Payment",
+      "movementStatus": "Awaiting Dispatch",
+      "status": "Awaiting Dispatch",
+      "serviceType": "Air Express",
+      "sender": {
+        "name": "Marcus Vance",
+        "company": "Heidelberg Precision Labs",
+        "street": "Industriestrasse 42",
+        "city": "Frankfurt",
+        "postalCode": "60549",
+        "country": "Germany",
+        "phone": "+49 69 5050 11",
+        "email": "logistics@heidelberg-labs.de"
+      },
+      "recipient": {
+        "name": "Elena Rostova",
+        "company": "Acme Global Aerospace",
+        "street": "750 3rd Avenue, Fl 18",
+        "city": "New York",
+        "postalCode": "10017",
+        "country": "United States",
+        "phone": "+1 (555) 234-9000",
+        "email": "elena@acme-aerospace.com"
+      },
+      "originHub": {
+        "name": "Frankfurt Cargo Gateway",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "code": "FRA",
+        "lat": 50,
+        "lng": 8.5
+      },
+      "destinationHub": {
+        "name": "New York International Terminal",
+        "city": "New York",
+        "country": "United States",
+        "code": "NEW",
+        "lat": 40.7,
+        "lng": -74
+      },
+      "currentLocation": {
+        "name": "Frankfurt Consignment Collection Point",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "lat": 50,
+        "lng": 8.5
+      },
+      "cargoDetails": {
+        "cargoType": "Electronic Sensors & Transducers",
+        "weightKg": 85,
+        "pieces": 3,
+        "declaredValueUsd": 1500,
+        "dangerousGoods": false,
+        "temperatureControlled": false,
+        "dimensions": {
+          "lengthCm": 80,
+          "widthCm": 60,
+          "heightCm": 50
+        }
+      },
+      "carrier": {
+        "name": "Freight Plus Logistics Network",
+        "serviceLevel": "Air Express",
+        "sealNumber": "SEAL-3490-A"
+      },
+      "pricing": {
+        "baseAmount": 843,
+        "handlingFee": 120,
+        "totalAmount": 843,
+        "currency": "USD",
+        "payer": "sender"
+      },
+      "holdDetails": {
+        "isOnHold": false
+      },
+      "estimatedDelivery": "2026-10-27T03:01:26.588Z",
+      "dispatchDate": null,
+      "actualDelivery": null,
+      "signatureRequired": true,
+      "notes": "Handle with care. Optoelectronic components.",
+      "createdAt": "2026-10-25T03:01:26.588Z",
+      "updatedAt": "2026-10-25T03:01:26.588Z",
+      "userId": "admin-1792784037397",
+      "milestones": [
+        {
+          "id": "ms-1792897286588-1",
+          "status": "Awaiting Dispatch",
+          "title": "Booking Received — Awaiting Admin Review",
+          "location": "Frankfurt Booking Portal",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-25T03:01:26.588Z",
+          "notes": "Consignment created with Air Express service tier. Awaiting payment and dispatch authorization.",
+          "operator": "System Automation",
+          "completed": true,
+          "lat": 50,
+          "lng": 8.5
+        }
+      ]
+    },
+    {
+      "id": "shp-001",
+      "trackingNumber": "FP-8942-US",
+      "consignmentNumber": "CN-2026-8942",
+      "trackingToken": "tok_8942_frankfurt_jfk_a7b9",
+      "title": "High-Precision Surgical Robotics & Sensors",
+      "bookingStatus": "Approved",
+      "paymentStatus": "Paid",
+      "movementStatus": "In Transit",
+      "status": "In Transit",
+      "serviceType": "Air Express",
+      "userId": "user-client-01",
+      "sender": {
+        "name": "Dr. Klaus Becker",
+        "company": "Heidelberg BioMedical Instruments GmbH",
+        "email": "logistics@heidelberg-med.de",
+        "phone": "+49 6221 5400",
+        "street": "Tiergartenstrasse 17",
+        "city": "Heidelberg",
+        "postalCode": "69121",
+        "country": "Germany",
+        "airportOrPortCode": "FRA",
+        "lat": 49.4093,
+        "lng": 8.6942
+      },
+      "recipient": {
+        "name": "Elena Rostova",
+        "company": "Acme High-Tech Components Inc.",
+        "email": "client@acmecorp.com",
+        "phone": "+1 (555) 234-5678",
+        "street": "750 Lexington Avenue, Fl 14",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10022",
+        "country": "United States",
+        "airportOrPortCode": "JFK",
+        "lat": 40.7629,
+        "lng": -73.9701
+      },
+      "originHub": {
+        "name": "Frankfurt CargoCity South Hub",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "code": "FRA",
+        "lat": 50.0379,
+        "lng": 8.5622
+      },
+      "destinationHub": {
+        "name": "John F. Kennedy International Cargo Terminal",
+        "city": "New York",
+        "country": "United States",
+        "code": "JFK",
+        "lat": 40.6413,
+        "lng": -73.7781
+      },
+      "currentLocation": {
+        "name": "Transatlantic Flight Corridor (Flight LH-8201)",
+        "city": "Mid-Atlantic En Route",
+        "country": "International Airspace",
+        "lat": 48.21,
+        "lng": -35.4
+      },
+      "cargoDetails": {
+        "pieces": 4,
+        "weightKg": 142.5,
+        "volumeCbm": 1.25,
+        "declaredValueUsd": 185000,
+        "cargoType": "Precision Medical Equipment",
+        "dimensions": {
+          "lengthCm": 120,
+          "widthCm": 80,
+          "heightCm": 110
+        },
+        "dangerousGoods": false,
+        "temperatureControlled": true,
+        "temperatureRange": "15°C - 25°C"
+      },
+      "carrier": {
+        "name": "Lufthansa Cargo AG",
+        "serviceLevel": "Air Priority Secure",
+        "vesselOrFlight": "LH-8201 (Boeing 777F)",
+        "sealNumber": "SEAL-FRA-8942-A",
+        "contactNumber": "+49 69 6960"
+      },
+      "pricing": {
+        "baseAmount": 1211.25,
+        "handlingFee": 150,
+        "totalAmount": 1361.25,
+        "currency": "USD",
+        "payer": "sender"
+      },
+      "holdDetails": {
+        "isOnHold": false
+      },
+      "estimatedDelivery": "2026-10-24T23:33:17.567Z",
+      "dispatchDate": "2026-10-23T13:33:17.567Z",
+      "actualDelivery": null,
+      "createdAt": "2026-10-22T07:33:17.567Z",
+      "updatedAt": "2026-10-23T13:33:17.567Z",
+      "signatureRequired": true,
+      "notes": "Fragile optoelectronic sensors. Keep upright. Shock sensors armed.",
+      "milestones": [
+        {
+          "id": "ms-001-1",
+          "status": "Awaiting Dispatch",
+          "title": "Booking Approved & Consignment Documented",
+          "location": "Heidelberg Operations Center",
+          "city": "Heidelberg",
+          "country": "Germany",
+          "timestamp": "2026-10-22T07:33:17.567Z",
+          "notes": "Airway Bill AWB-020-8942-01 generated. Consignment manifest approved.",
+          "operator": "H. Weber (FRA-OPS)",
+          "completed": true,
+          "lat": 49.4093,
+          "lng": 8.6942
+        },
+        {
+          "id": "ms-001-2",
+          "status": "In Transit",
+          "title": "Departed Frankfurt On Flight LH-8201",
+          "location": "Frankfurt Cargo Terminal Ramp 4",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-23T13:33:17.567Z",
+          "notes": "Loaded into Lower Deck Pallet Position 22R. Cruising at 36,000 ft.",
+          "operator": "Captain J. Wagner",
+          "completed": true,
+          "lat": 48.21,
+          "lng": -35.4
+        }
+      ]
+    },
+    {
+      "id": "shp-002",
+      "trackingNumber": "FP-7104-DE",
+      "consignmentNumber": "CN-2026-7104",
+      "trackingToken": "tok_7104_tokyo_frankfurt_b2c4",
+      "title": "Automated Industrial Controller Wafers & Sensors",
+      "bookingStatus": "Approved",
+      "paymentStatus": "Paid",
+      "movementStatus": "In Transit",
+      "status": "In Transit",
+      "serviceType": "Standard Freight",
+      "userId": "user-client-01",
+      "sender": {
+        "name": "Kenji Takahashi",
+        "company": "Sora Precision Automation K.K.",
+        "email": "export@sora-precision.co.jp",
+        "phone": "+81 3 5555 0142",
+        "street": "Minato-ku Shibaura 3-1-21",
+        "city": "Tokyo",
+        "postalCode": "108-0023",
+        "country": "Japan",
+        "airportOrPortCode": "HND",
+        "lat": 35.6441,
+        "lng": 139.7475
+      },
+      "recipient": {
+        "name": "Elena Rostova",
+        "company": "Acme Components Germany",
+        "email": "elena@acme.de",
+        "phone": "+49 69 9998 01",
+        "street": "Speicherstrasse 55",
+        "city": "Frankfurt am Main",
+        "postalCode": "60327",
+        "country": "Germany",
+        "airportOrPortCode": "FRA",
+        "lat": 50.1012,
+        "lng": 8.6653
+      },
+      "originHub": {
+        "name": "Tokyo Haneda Air Cargo Terminal",
+        "city": "Tokyo",
+        "country": "Japan",
+        "code": "HND",
+        "lat": 35.5494,
+        "lng": 139.7798
+      },
+      "destinationHub": {
+        "name": "Frankfurt Logistics Air Hub",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "code": "FRA",
+        "lat": 50.0379,
+        "lng": 8.5622
+      },
+      "currentLocation": {
+        "name": "Regional Intermodal Hub",
+        "city": "Frankfurt",
+        "country": "Germany",
+        "lat": 50.0379,
+        "lng": 8.5622
+      },
+      "cargoDetails": {
+        "pieces": 8,
+        "weightKg": 380,
+        "volumeCbm": 3.4,
+        "declaredValueUsd": 94000,
+        "cargoType": "Industrial Automation Electronics",
+        "dimensions": {
+          "lengthCm": 100,
+          "widthCm": 100,
+          "heightCm": 120
+        },
+        "dangerousGoods": false,
+        "temperatureControlled": false
+      },
+      "carrier": {
+        "name": "Nippon Cargo Airlines",
+        "serviceLevel": "Express Freight Global",
+        "vesselOrFlight": "KZ-024 (Boeing 747-8F)",
+        "sealNumber": "JP-TYO-99120",
+        "contactNumber": "+81 3 5742 2200"
+      },
+      "pricing": {
+        "baseAmount": 1216,
+        "handlingFee": 120,
+        "totalAmount": 1336,
+        "currency": "USD",
+        "payer": "recipient"
+      },
+      "holdDetails": {
+        "isOnHold": false,
+        "reason": "Customs inspection documentation hold.",
+        "customerExplanation": "Customs clearance inspection in progress at regional hub.",
+        "placedOnHoldAt": "2026-10-27T07:05:41.357Z",
+        "resumedAt": "2026-10-27T07:18:53.677Z"
+      },
+      "estimatedDelivery": "2026-10-13",
+      "dispatchDate": "2026-10-21T12:33:17.567Z",
+      "actualDelivery": null,
+      "createdAt": "2026-10-20T19:33:17.567Z",
+      "updatedAt": "2026-10-27T07:18:53.677Z",
+      "signatureRequired": true,
+      "notes": "Customs declaration under tariff code 8538.90.",
+      "milestones": [
+        {
+          "id": "ms-002-1",
+          "status": "Awaiting Dispatch",
+          "title": "Export Documentation Verified",
+          "location": "Tokyo Logistics Dispatch Center",
+          "city": "Tokyo",
+          "country": "Japan",
+          "timestamp": "2026-10-20T21:33:17.567Z",
+          "notes": "EDI manifest dispatched to Haneda customs authority.",
+          "operator": "K. Tanaka",
+          "completed": true,
+          "lat": 35.5494,
+          "lng": 139.7798
+        },
+        {
+          "id": "ms-002-2",
+          "status": "In Transit",
+          "title": "Arrived at Frankfurt Transit Hub",
+          "location": "Frankfurt Airport CargoCity Ramp 3",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-23T05:33:17.567Z",
+          "notes": "Flight KZ-024 touched down. De-consolidated into bonded warehouse.",
+          "operator": "R. Braun",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-002-3",
+          "status": "On Hold",
+          "title": "Customs Hold — Documentation Review Underway",
+          "location": "Hauptzollamt Frankfurt Flughafen",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-23T15:33:17.567Z",
+          "notes": "Awaiting European Union RoHS compliance declaration certificate.",
+          "operator": "Inspector D. Mueller",
+          "completed": false,
+          "lat": 50.0385,
+          "lng": 8.5635
+        },
+        {
+          "id": "ms-1792829904528-6567",
+          "status": "On Hold",
+          "title": "Arrived at Transit Hub",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:18:24.528Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-1792829963767-57af",
+          "status": "On Hold",
+          "title": "Arrived at Transit Hub",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:19:23.767Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-resume-1792830097878",
+          "status": "In Transit",
+          "title": "Operational Hold Cleared — Transit Resumed",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:21:37.878Z",
+          "notes": "Clearance granted. Scheduled on next dispatch transport line.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-hold-1792830266103",
+          "status": "On Hold",
+          "title": "Operational Hold Placed",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:24:26.103Z",
+          "notes": "Customs clearance inspection in progress at regional hub.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-1792830305204-e99b",
+          "status": "On Hold",
+          "title": "Arrived at Transit Hub",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:25:05.204Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-1792831169911-1fcb",
+          "status": "On Hold",
+          "title": "custom clearance",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:39:29.911Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-1792831301329-a4e6",
+          "status": "In Transit",
+          "title": "Arrived at Transit Hub",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:41:41.329Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-1792831566868-80d8",
+          "status": "On Hold",
+          "title": "clearance",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:46:06.868Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-1792831652524-202a",
+          "status": "In Transit",
+          "title": "Arrived at Transit Hub",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-24T08:47:32.524Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-hold-1793084741357",
+          "status": "On Hold",
+          "title": "Operational Hold Placed",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-27T07:05:41.357Z",
+          "notes": "Customs clearance inspection in progress at regional hub.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-resume-1793084836042",
+          "status": "In Transit",
+          "title": "Operational Hold Cleared — Transit Resumed",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-27T07:07:16.042Z",
+          "notes": "Clearance granted. Scheduled on next dispatch transport line.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-1793085303519-b2d5",
+          "status": "On Hold",
+          "title": "Arrived at Transit Hub",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-27T07:15:03.519Z",
+          "notes": "Barcode verified. Security seal intact.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        },
+        {
+          "id": "ms-resume-1793085533677",
+          "status": "In Transit",
+          "title": "Operational Hold Cleared — Transit Resumed",
+          "location": "Regional Intermodal Hub",
+          "city": "Frankfurt",
+          "country": "Germany",
+          "timestamp": "2026-10-27T07:18:53.677Z",
+          "notes": "Clearance granted. Scheduled on next dispatch transport line.",
+          "operator": "System Admin",
+          "completed": true,
+          "lat": 50.0379,
+          "lng": 8.5622
+        }
+      ],
+      "journeyPausedAt": null,
+      "journeyPausedElapsedSeconds": 95
+    },
+    {
+      "id": "shp-003",
+      "trackingNumber": "FP-1209-CA",
+      "consignmentNumber": "CN-2026-1209",
+      "trackingToken": "tok_1209_chicago_montreal_d5e8",
+      "title": "Automotive EV Battery Cell Modules",
+      "bookingStatus": "Awaiting Admin Review",
+      "paymentStatus": "Awaiting Payment",
+      "movementStatus": "Awaiting Dispatch",
+      "status": "Awaiting Dispatch",
+      "serviceType": "Standard Freight",
+      "userId": "user-client-01",
+      "sender": {
+        "name": "Robert Miller",
+        "company": "Great Lakes Lithium Cells LLC",
+        "email": "freight@greatlakes-cells.com",
+        "phone": "+1 (312) 555-0188",
+        "street": "4200 South Pulaski Rd",
+        "city": "Chicago",
+        "state": "IL",
+        "postalCode": "60632",
+        "country": "United States",
+        "airportOrPortCode": "ORD",
+        "lat": 41.8164,
+        "lng": -87.7247
+      },
+      "recipient": {
+        "name": "Marc Tremblay",
+        "company": "St. Lawrence Electric Mobility Ltd.",
+        "email": "m.tremblay@stlawrence-ev.ca",
+        "phone": "+1 (514) 555-0149",
+        "street": "8800 Rue Saint-Urbain",
+        "city": "Montreal",
+        "state": "QC",
+        "postalCode": "H2P 2N7",
+        "country": "Canada",
+        "airportOrPortCode": "YUL",
+        "lat": 45.5401,
+        "lng": -73.6394
+      },
+      "originHub": {
+        "name": "Chicago O'Hare Intermodal Freight Depot",
+        "city": "Chicago",
+        "country": "United States",
+        "code": "ORD",
+        "lat": 41.9742,
+        "lng": -87.9073
+      },
+      "destinationHub": {
+        "name": "Montreal Pierre Elliott Trudeau Cargo Logistics",
+        "city": "Montreal",
+        "country": "Canada",
+        "code": "YUL",
+        "lat": 45.4705,
+        "lng": -73.7408
+      },
+      "currentLocation": {
+        "name": "Great Lakes Packaging Center",
+        "city": "Chicago",
+        "country": "United States",
+        "lat": 41.8164,
+        "lng": -87.7247
+      },
+      "cargoDetails": {
+        "pieces": 12,
+        "weightKg": 1240,
+        "volumeCbm": 6.2,
+        "declaredValueUsd": 68000,
+        "cargoType": "Lithium Ion Battery Modules (UN3480)",
+        "dimensions": {
+          "lengthCm": 120,
+          "widthCm": 100,
+          "heightCm": 140
+        },
+        "dangerousGoods": true,
+        "temperatureControlled": false
+      },
+      "carrier": {
+        "name": "North American Freightways Intermodal",
+        "serviceLevel": "Cross-Border HazMat Ground",
+        "vesselOrFlight": "TRK-NA-449",
+        "sealNumber": "HAZ-USCA-8819",
+        "contactNumber": "+1 (800) 555-8833"
+      },
+      "pricing": {
+        "baseAmount": 3968,
+        "handlingFee": 250,
+        "totalAmount": 4218,
+        "currency": "USD",
+        "payer": "sender"
+      },
+      "holdDetails": {
+        "isOnHold": false
+      },
+      "estimatedDelivery": "2026-10-26T19:33:17.567Z",
+      "dispatchDate": null,
+      "actualDelivery": null,
+      "createdAt": "2026-10-23T16:33:17.567Z",
+      "updatedAt": "2026-10-23T16:33:17.567Z",
+      "signatureRequired": true,
+      "notes": "UN 3480 Class 9 Dangerous Goods. Awaiting administrator review and border pre-clearance.",
+      "milestones": [
+        {
+          "id": "ms-005-1",
+          "status": "Awaiting Dispatch",
+          "title": "Booking Submitted — Awaiting Administrator Review",
+          "location": "Chicago Packaging Center",
+          "city": "Chicago",
+          "country": "United States",
+          "timestamp": "2026-10-23T16:33:17.567Z",
+          "notes": "Class 9 HazMat documentation uploaded. Awaiting dispatch authorization.",
+          "operator": "Automated Booking System",
+          "completed": true,
+          "lat": 41.8164,
+          "lng": -87.7247
+        }
+      ]
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1793178020463-760805",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-1793177404752",
+      "details": {
+        "title": "Arrived at Transit Hub",
+        "status": "In Transit",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-28T09:00:20.467Z"
+    },
+    {
+      "id": "log-1793177821970-a61095",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "AUTHORIZE_DISPATCH",
+      "targetId": "shp-1793177404752",
+      "details": {
+        "dispatchDate": "2026-10-28T08:57:01.955Z"
+      },
+      "timestamp": "2026-10-28T08:57:01.970Z"
+    },
+    {
+      "id": "log-1793177719459-888dc2",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "UPDATE_PAYMENT_STATUS",
+      "targetId": "shp-1793177404752",
+      "details": {
+        "paymentStatus": "Paid"
+      },
+      "timestamp": "2026-10-28T08:55:19.460Z"
+    },
+    {
+      "id": "log-1793177708106-381b41",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "UPDATE_BOOKING_STATUS",
+      "targetId": "shp-1793177404752",
+      "details": {
+        "bookingStatus": "Approved"
+      },
+      "timestamp": "2026-10-28T08:55:08.106Z"
+    },
+    {
+      "id": "log-1793085533677-21afd4",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "RESUME_HOLD",
+      "targetId": "shp-002",
+      "details": {
+        "resumptionNote": "Clearance granted. Scheduled on next dispatch transport line."
+      },
+      "timestamp": "2026-10-27T07:18:53.678Z"
+    },
+    {
+      "id": "log-1793085303530-96dd6a",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "Arrived at Transit Hub",
+        "status": "On Hold",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-27T07:15:03.530Z"
+    },
+    {
+      "id": "log-1793084836042-462079",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "RESUME_HOLD",
+      "targetId": "shp-002",
+      "details": {
+        "resumptionNote": "Clearance granted. Scheduled on next dispatch transport line."
+      },
+      "timestamp": "2026-10-27T07:07:16.042Z"
+    },
+    {
+      "id": "log-1793084741357-343789",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "PLACE_HOLD",
+      "targetId": "shp-002",
+      "details": {
+        "reason": "Customs inspection documentation hold.",
+        "customerExplanation": "Customs clearance inspection in progress at regional hub."
+      },
+      "timestamp": "2026-10-27T07:05:41.358Z"
+    },
+    {
+      "id": "log-1792831652528-971ee6",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "Arrived at Transit Hub",
+        "status": "In Transit",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-24T08:47:32.528Z"
+    },
+    {
+      "id": "log-1792831566887-b47396",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "clearance",
+        "status": "On Hold",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-24T08:46:06.887Z"
+    },
+    {
+      "id": "log-1792831301346-c7b165",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "Arrived at Transit Hub",
+        "status": "In Transit",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-24T08:41:41.346Z"
+    },
+    {
+      "id": "log-1792831169928-5c23d6",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "custom clearance",
+        "status": "On Hold",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-24T08:39:29.928Z"
+    },
+    {
+      "id": "log-1792830305209-bc0432",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "Arrived at Transit Hub",
+        "status": "On Hold",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-24T08:25:05.209Z"
+    },
+    {
+      "id": "log-1792830266103-210762",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "PLACE_HOLD",
+      "targetId": "shp-002",
+      "details": {
+        "reason": "Customs inspection documentation hold.",
+        "customerExplanation": "Customs clearance inspection in progress at regional hub."
+      },
+      "timestamp": "2026-10-24T08:24:26.103Z"
+    },
+    {
+      "id": "log-1792830097878-d8f3dd",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "RESUME_HOLD",
+      "targetId": "shp-002",
+      "details": {
+        "revisedEstimate": "2026-10-13",
+        "resumptionNote": "Clearance granted. Scheduled on next dispatch transport line."
+      },
+      "timestamp": "2026-10-24T08:21:37.878Z"
+    },
+    {
+      "id": "log-1792830068237-414bf0",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "UPDATE_PAYMENT_STATUS",
+      "targetId": "shp-002",
+      "details": {
+        "paymentStatus": "Paid"
+      },
+      "timestamp": "2026-10-24T08:21:08.238Z"
+    },
+    {
+      "id": "log-1792830061982-7f4653",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "UPDATE_BOOKING_STATUS",
+      "targetId": "shp-002",
+      "details": {
+        "bookingStatus": "Approved"
+      },
+      "timestamp": "2026-10-24T08:21:01.982Z"
+    },
+    {
+      "id": "log-1792830019328-5c497f",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "UPDATE_BOOKING_STATUS",
+      "targetId": "shp-002",
+      "details": {
+        "bookingStatus": "Awaiting Admin Review"
+      },
+      "timestamp": "2026-10-24T08:20:19.328Z"
+    },
+    {
+      "id": "log-1792829963783-24db53",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "Arrived at Transit Hub",
+        "status": "On Hold",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-24T08:19:23.783Z"
+    },
+    {
+      "id": "log-1792829904539-00bbf4",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "ADD_CHECKPOINT",
+      "targetId": "shp-002",
+      "details": {
+        "title": "Arrived at Transit Hub",
+        "status": "On Hold",
+        "location": "Regional Intermodal Hub"
+      },
+      "timestamp": "2026-10-24T08:18:24.539Z"
+    },
+    {
+      "id": "log-1792829292497-cfddd2",
+      "adminId": "admin-1792784037397",
+      "adminEmail": "admin@freightplus.com",
+      "action": "UPDATE_PAYMENT_STATUS",
+      "targetId": "shp-002",
+      "details": {
+        "paymentStatus": "Awaiting Payment"
+      },
+      "timestamp": "2026-10-24T08:08:12.498Z"
+    }
+  ],
+  "supportMessages": [
+    {
+      "shipmentId": "shp-002",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hrHaaaa",
+      "attachments": [
+        {
+          "name": "9fe54fde-4408-4b90-a412-d4e60186081e.jpg",
+          "url": "/uploads/1792955193821-9fe54fde-4408-4b90-a412-d4e60186081e.jpg",
+          "type": "image/jpeg",
+          "size": 127430
+        }
+      ],
+      "id": "msg-1792955193899-9455bb",
+      "createdAt": "2026-10-25T19:06:33.899Z"
+    },
+    {
+      "shipmentId": "shp-002",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello",
+      "attachments": [
+        {
+          "name": "1000025726.jpg",
+          "url": "/uploads/1792955295253-1000025726.jpg",
+          "type": "image/jpeg",
+          "size": 35309
+        }
+      ],
+      "id": "msg-1792955295279-f0907b",
+      "createdAt": "2026-10-25T19:08:15.280Z"
+    },
+    {
+      "shipmentId": "shp-002",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello",
+      "attachments": [
+        {
+          "name": "81f4b3e6-60cf-4e1b-9bd3-388adaa69bbe.jpg",
+          "url": "/uploads/1792958422070-81f4b3e6-60cf-4e1b-9bd3-388adaa69bbe.jpg",
+          "type": "image/jpeg",
+          "size": 93421
+        }
+      ],
+      "id": "msg-1792958422113-437abc",
+      "createdAt": "2026-10-25T20:00:22.114Z"
+    },
+    {
+      "shipmentId": "shp-002",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello",
+      "attachments": [],
+      "id": "msg-1792958506935-4c14d9",
+      "createdAt": "2026-10-25T20:01:46.935Z"
+    },
+    {
+      "shipmentId": "shp-002",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello",
+      "attachments": [],
+      "id": "msg-1792959886531-3bbf24",
+      "createdAt": "2026-10-25T20:24:46.531Z"
+    },
+    {
+      "shipmentId": "shp-002",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hi",
+      "attachments": [],
+      "id": "msg-1792960212972-e0ff53",
+      "createdAt": "2026-10-25T20:30:12.972Z"
+    },
+    {
+      "shipmentId": "shp-002",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello i want to book",
+      "attachments": [],
+      "id": "msg-1792992329316-a06928",
+      "createdAt": "2026-10-26T05:25:29.316Z"
+    },
+    {
+      "shipmentId": "shp-001",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "Hello",
+      "attachments": [],
+      "id": "msg-1792992459248-197985",
+      "createdAt": "2026-10-26T05:27:39.248Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello how can i book my customer support",
+      "attachments": [],
+      "id": "msg-1792992864590-8122aa",
+      "createdAt": "2026-10-26T05:34:24.590Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "Hello dear",
+      "attachments": [],
+      "id": "msg-1792992935404-4f7817",
+      "createdAt": "2026-10-26T05:35:35.404Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "why",
+      "attachments": [],
+      "id": "msg-1792993027522-09441c",
+      "createdAt": "2026-10-26T05:37:07.523Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "i love this site",
+      "attachments": [],
+      "id": "msg-1792993966083-fd0a51",
+      "createdAt": "2026-10-26T05:52:46.083Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello",
+      "attachments": [],
+      "id": "msg-1793004848031-e4f86d",
+      "createdAt": "2026-10-26T08:54:08.031Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "dear lovely",
+      "attachments": [],
+      "id": "msg-1793005324917-821f9d",
+      "createdAt": "2026-10-26T09:02:04.917Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello",
+      "attachments": [],
+      "id": "msg-1793005977360-8cc667",
+      "createdAt": "2026-10-26T09:12:57.360Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "dem good",
+      "attachments": [],
+      "id": "msg-1793006644688-58503d",
+      "createdAt": "2026-10-26T09:24:04.689Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "",
+      "attachments": [
+        {
+          "name": "1000025726.jpg",
+          "url": "/uploads/1793006717702-1000025726.jpg",
+          "type": "image/jpeg",
+          "size": 35309
+        }
+      ],
+      "id": "msg-1793006717743-889923",
+      "createdAt": "2026-10-26T09:25:17.743Z"
+    },
+    {
+      "shipmentId": "shp-003",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hi",
+      "attachments": [],
+      "id": "msg-1793007859274-d8454f",
+      "createdAt": "2026-10-26T09:44:19.274Z"
+    },
+    {
+      "shipmentId": "shp-1793177404752",
+      "senderId": "user-client-01",
+      "senderName": "Elena Rostova",
+      "senderRole": "customer",
+      "text": "hello",
+      "attachments": [
+        {
+          "name": "1000025726.jpg",
+          "url": "https://res.cloudinary.com/doij0yl6w/image/upload/v1793227369/freightplus/customer-support/1793227366237-1000025726.jpg.jpg",
+          "type": "image/jpeg",
+          "size": 35309
+        }
+      ],
+      "id": "msg-1793227370299-bb52db",
+      "createdAt": "2026-10-28T22:42:50.299Z"
+    }
+  ],
+  "recipientSupportMessages": [
+    {
+      "shipmentId": "shp-001",
+      "senderId": "recipient-shp-001",
+      "senderName": "Elena Rostova",
+      "senderRole": "recipient",
+      "text": "hello",
+      "attachments": [],
+      "id": "recipient-msg-1792928554147-c23c49",
+      "createdAt": "2026-10-25T11:42:34.148Z"
+    },
+    {
+      "shipmentId": "shp-001",
+      "senderId": "recipient-shp-001",
+      "senderName": "Elena Rostova",
+      "senderRole": "recipient",
+      "text": "HELLO",
+      "attachments": [],
+      "id": "recipient-msg-1792936672955-8e4c28",
+      "createdAt": "2026-10-25T13:57:52.955Z"
+    },
+    {
+      "shipmentId": "shp-001",
+      "senderId": "recipient-shp-001",
+      "senderName": "Elena Rostova",
+      "senderRole": "recipient",
+      "text": "HOW ARE YOU",
+      "attachments": [
+        {
+          "name": "1000025725.jpg",
+          "url": "/uploads/${Date.now()}-${safeName}",
+          "type": "image/jpeg",
+          "size": 40646
+        }
+      ],
+      "id": "recipient-msg-1792936694759-0303bf",
+      "createdAt": "2026-10-25T13:58:14.759Z"
+    },
+    {
+      "shipmentId": "shp-002",
+      "senderId": "admin-1792784037397",
+      "senderName": "System Admin",
+      "senderRole": "admin",
+      "text": "hello have you make the payment",
+      "attachments": [],
+      "id": "recipient-msg-1793019976178-47a670",
+      "createdAt": "2026-10-26T13:06:16.179Z"
+    },
+    {
+      "shipmentId": "shp-001",
+      "senderId": "recipient-shp-001",
+      "senderName": "Elena Rostova",
+      "senderRole": "recipient",
+      "text": "hi how are you doing",
+      "attachments": [],
+      "id": "recipient-msg-1793020140664-36ee1d",
+      "createdAt": "2026-10-26T13:09:00.664Z"
+    },
+    {
+      "shipmentId": "shp-001",
+      "senderId": "recipient-shp-001",
+      "senderName": "Elena Rostova",
+      "senderRole": "recipient",
+      "text": "this is my recipt",
+      "attachments": [
+        {
+          "name": "1000025150.jpg",
+          "url": "/uploads/${Date.now()}-${safeName}",
+          "type": "image/jpeg",
+          "size": 46811
+        }
+      ],
+      "id": "recipient-msg-1793020347727-53fac4",
+      "createdAt": "2026-10-26T13:12:27.727Z"
+    },
+    {
+      "shipmentId": "shp-001",
+      "senderId": "recipient-shp-001",
+      "senderName": "Elena Rostova",
+      "senderRole": "recipient",
+      "text": "confirm",
+      "attachments": [
+        {
+          "name": "1000025727.jpg",
+          "url": "/uploads/1793021243529-1000025727.jpg",
+          "type": "image/jpeg",
+          "size": 30650
+        }
+      ],
+      "id": "recipient-msg-1793021243576-4defe5",
+      "createdAt": "2026-10-26T13:27:23.576Z"
+    },
+    {
+      "shipmentId": "shp-1793177404752",
+      "senderId": "recipient-shp-1793177404752",
+      "senderName": "Elena Rose",
+      "senderRole": "recipient",
+      "text": "hello",
+      "attachments": [
+        {
+          "name": "81f4b3e6-60cf-4e1b-9bd3-388adaa69bbe.jpg",
+          "url": "https://res.cloudinary.com/doij0yl6w/image/upload/v1793227451/freightplus/recipient-chat/1793227449103-81f4b3e6-60cf-4e1b-9bd3-388adaa69bbe.jpg.jpg",
+          "type": "image/jpeg",
+          "size": 93421
+        }
+      ],
+      "id": "recipient-msg-1793227451983-3e2e09",
+      "createdAt": "2026-10-28T22:44:11.983Z"
+    }
+  ]
+}
