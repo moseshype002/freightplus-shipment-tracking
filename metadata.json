@@ -1,0 +1,6 @@
+{
+  "name": "FreightPulse | Consignment & Shipment Tracking Platform",
+  "description": "Enterprise shipment and consignment tracking platform with real-time milestone checkpoints, interactive route tracking, booking workflows, and admin dispatch console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
